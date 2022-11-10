@@ -1,4 +1,4 @@
-# set up
+# set up & execute
 
 ```
 $ docker run --rm -it $(docker build -q .) /bin/bash
