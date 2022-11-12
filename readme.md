@@ -2,7 +2,8 @@
 
 ```
 $ docker run --rm -it $(docker build -q .) /bin/bash
-% node fetch.mjs https://example.com https://example.net
+% ./fetch.mjs https://example.com https://example.net
+% ./fetch.mjs --metadata https://example.com
 ```
 
 ## test
