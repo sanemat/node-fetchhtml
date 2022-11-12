@@ -11,3 +11,10 @@ $ docker run --rm -it $(docker build -q .) /bin/bash
 ```
 $ npm test
 ```
+
+## next
+
+implement downloadfull feature
+- get image urls
+- get link rel urls
+- download them into example.com directory...
