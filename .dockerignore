@@ -1,5 +1,4 @@
 *
-!fetch.mjs
-!fetch.test.mjs
+!*.mjs
 !package-lock.json
 !package.json

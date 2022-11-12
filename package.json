@@ -20,5 +20,8 @@
   "devDependencies": {
     "@types/node": "^18.11.9",
     "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.0"
   }
 }
