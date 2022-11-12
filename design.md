@@ -21,6 +21,8 @@ fetch html data.
 input: url
 output: html string
 
+- [ ] follow redirect?
+
 # downloadfull
 
 fetch html + css + js + images.
