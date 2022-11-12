@@ -1,5 +1,5 @@
 *
-!fetch.ts
-!fetch.test.ts
+!fetch.mjs
+!fetch.test.mjs
 !package-lock.json
 !package.json

@@ -1,4 +1,4 @@
-import { sum } from "./fetch";
+import { sum } from "./fetch.mjs";
 import test from "node:test";
 import { strict as assert } from "node:assert";
 
