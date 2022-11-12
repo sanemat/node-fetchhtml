@@ -14,7 +14,7 @@ example.com.html example.net.html
 - [ ] how to avoid https://../../../etc/passwd
   - think it later
 
-# downloadhtml
+# downloadhtml (done)
 
 fetch html data.
 
@@ -23,7 +23,7 @@ output: html string
 
 - [ ] follow redirect?
 
-# downloadfull
+# downloadfull (not yet)
 
 fetch html + css + js + images.
 
@@ -32,28 +32,28 @@ first output: html string
 second input: html string
 second output: urls
 
-# parsehtml
+# parsehtml (done)
 
 parse html.
 
 input: html string
 output: link url strings, image url strings
 
-# upsertmetadata
+# upsertmetadata (done)
 
 upsert metadata.
 
 input: date and time of last fetch, url, num_links, images, metadata.json
 output: metadata.json
 
-# selectmetadata
+# selectmetadata (implemented it into fetch directly) (done)
 
 select metadata by url.
 
 input: url, metadata.json
 output: metadata
 
-# fetch (cli)
+# fetch (cli) (done)
 
 urls.map(
     (url) => downloadhtml(url)
@@ -61,6 +61,6 @@ urls.map(
     .then((metadata) => upsertmetatada(metadata))
 )
 
-# fetch metadata (cli)
+# fetch metadata (cli) (done)
 
 url => selectmetadata(url)
