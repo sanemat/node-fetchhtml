@@ -5,10 +5,6 @@ import { parsehtml } from "./parsehtml.mjs";
 import { upsertmetadata } from "./upsertmetadata.mjs";
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 
-export function sum(a, b) {
-  return a + b;
-}
-
 const myArgs = process.argv.slice(2);
 let metadataPath = "metadata.json";
 
