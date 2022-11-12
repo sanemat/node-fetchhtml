@@ -25,7 +25,7 @@ if (myArgs[0] === "--metadata" && myArgs.length === 2) {
     console.log(`site: ${meta.url}`);
     console.log(`num_links: ${meta.num_links}`);
     console.log(`images: ${meta.images}`);
-    console.log(`last_fetch: ${meta.last_fetch}`);
+    console.log(`last_fetch: ${new Date(meta.last_fetch)}`);
   }
   process.exit();
 }
