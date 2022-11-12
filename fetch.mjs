@@ -13,6 +13,20 @@ if (myArgs.length === 0) {
 }
 if (myArgs[0] === "--metadata" && myArgs.length === 2) {
   console.log(`show metadata ${myArgs[1]}`);
+  const url = new URL(myArgs[1]);
+  let metadataContent;
+  if (existsSync(metadataPath)) {
+    metadataContent = JSON.parse(readFileSync(metadataPath));
+  } else {
+    metadataContent = {};
+  }
+  const meta = metadataContent[url.hostname];
+  if (meta) {
+    console.log(`site: ${meta.url}`);
+    console.log(`num_links: ${meta.num_links}`);
+    console.log(`images: ${meta.images}`);
+    console.log(`last_fetch: ${meta.last_fetch}`);
+  }
   process.exit();
 }
 
