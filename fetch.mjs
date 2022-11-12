@@ -42,7 +42,7 @@ myArgs.map((urlInput) => {
     .then((meta) => {
       let metadataContent;
       if (existsSync(metadataPath)) {
-        metadataContent = readFileSync(metadataPath);
+        metadataContent = JSON.parse(readFileSync(metadataPath));
       } else {
         metadataContent = {};
       }
