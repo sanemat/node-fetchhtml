@@ -12,7 +12,6 @@ if (myArgs.length === 0) {
   process.exit();
 }
 if (myArgs[0] === "--metadata" && myArgs.length === 2) {
-  console.log(`show metadata ${myArgs[1]}`);
   const url = new URL(myArgs[1]);
   let metadataContent;
   if (existsSync(metadataPath)) {
