@@ -1,3 +1,19 @@
+# input
+
+fetch https://example.com https://example.net
+
+# output
+
+ls
+example.com.html example.net.html
+
+(sub) domain name + .html
+
+- how to store https://example.com/page1 ?
+  - think it later
+- how to avoid https://../../../etc/passwd
+  - think it later
+
 # downloadhtml
 
 fetch html data.
