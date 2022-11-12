@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { downloadhtml } from "./downloadhtml.mjs";
 
 export function sum(a, b) {
